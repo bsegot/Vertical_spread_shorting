@@ -13,14 +13,17 @@ Do we blow up with the tail risk?
 
 Data was collected on:
 
-['NFLX','AAPL','MSFT','FB','BABA','JPM','XOM','V','BAC','WMT','NVDA','SPY']
+
 
 ![](pictures/Vertical_spread.png)
 
 Conclusion:
 
 -Data was scraped only for a period of 2 months (Ideally for longer if I was able to pay for more)
+
 -It seems to work, however the big drawdown was not observed during the period I scraped the options chains.
+
+['NFLX','AAPL','MSFT','FB','BABA','JPM','XOM','V','BAC','WMT','NVDA','SPY']
 
 ![](pictures/backtest_returns.png)
 
@@ -29,7 +32,7 @@ Bonus:
 What about 1 day options to get the premium over the weekend.
 Solution A: scrape options on SPY which is an underlyings with daily options/
 Solution B: trying to model the price of an option over the weekend and backtest.
-(using Back and Scholes it proved to be an unadapted model for such short-termm, I gave up and conclude that enpirical data was more appropriate)
+(using Black and Scholes it proved to be an unadapted model for such short-term, I gave up and conclude that enpirical data was more appropriate)
 
 Proof: option that should be worth ~10 cents are e-10, etc.
 
