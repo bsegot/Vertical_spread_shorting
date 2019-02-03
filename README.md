@@ -11,6 +11,9 @@ The strategy:
 Shorting liquid calls and puts naked every thursday, or 1 day before their friday expiration.
 Do we blow up with the tail risk?
 
+Data was collected on:
+
+['NFLX','AAPL','MSFT','FB','BABA','JPM','XOM','V','BAC','WMT','NVDA','SPY']
 
 ![](pictures/Vertical_spread.png)
 
@@ -19,6 +22,7 @@ Conclusion:
 -Data was scraped only for a period of 2 months (Ideally for longer if I was able to pay for more)
 -It seems to work, however the big drawdown was not observed during the period I scraped the options chains.
 
+![](pictures/backtest_returns.png)
 
 Bonus:
 
